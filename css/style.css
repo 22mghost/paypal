@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+    background: rgba(0, 0, 0, .1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* navigation css */
+
+nav.nav {
+    display: flex;
+    /* flex: 3fr; */
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 0 0 4px 3px grey;
+    padding: 1em;
+    background: white;
+    border-bottom: 1px solid black;
+    z-index: 998;
+}
+
+nav.nav.sticky {
+    background-color: #fff;
+    position: fixed;
+}
+
+nav.nav .logo {
+    height: 40px;
+}
+
+nav.nav .logo img {
+    height: 100%;
+}
+
+nav.nav .menu {
+    display: flex;
+}
+
+nav.nav .menu li {
+    list-style-type: none;
+    margin: 10px 0 0 1em;
+}
+
+nav.nav .menu li a {
+    text-decoration: none;
+    font-size: 15pt;
+}
+
+nav.nav .menu li a:hover {
+    text-decoration: underline;
+    font-size: 15pt;
+}
+
+nav.nav .menu li.menubn {
+    background: linear-gradient(to right bottom, #7777f5, #ea00ff);
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+    margin-top: 1px;
+    margin-left: 30px;
+}
+
+nav.nav .menu li.menubtn {
+    background: linear-gradient(45deg, #ea00ff, #7777f5);
+    color: white;
+    padding: 4px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 1px;
+}
+
+nav.nav .menu li.menubn:hover {
+    background: linear-gradient(45deg, #ea00ff, #7777f5);
+}
+
+nav.nav .menu li.menubtn:hover {
+    background: linear-gradient(45deg, #7777f5, #ea00ff);
+}
+
+nav.nav .menu li.menubtn a,
+nav.nav .menu li.menubn a {
+    color: white;
+}
+
+nav .menu-btn,
+.nav .menu .cancel-btn {
+    position: absolute;
+    color: #7777f5;
+    right: 30px;
+    top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: none;
+}
+
+
+/* showcase css */
+
+section#showcase {
+    background: linear-gradient(45deg, #2E3192, #1bffff);
+    font-size: 16pt;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    padding: 1em;
+    color: rgb(255, 255, 255);
+}
+
+section#showcase .vid {
+    width: 500px;
+}
+
+section#showcase .vid video {
+    width: 100%;
+}
+
+
+
+/* About the course CSS */
+
+#about {
+    text-align: center;
+    margin-top: 5em;
+}
+
+#about .boxes {
+    display: flex;
+    justify-content: space-around;
+    padding: 3em;
+}
+
+#about .boxes .box {
+    width: 15%;
+    height: 150px;
+}
+
+#about span {
+    margin-top: 10px;
+}
+
+#about span a {
+    text-decoration: none;
+}
+
+#about .boxes .box .img {
+    height: 100px;
+}
+
+#about .boxes .box .img img {
+    height: 100%;
+}
+
+#about span a:hover {
+    padding: .5em;
+    text-decoration: underline;
+    background: #323393;
+    color: white;
+}
+
+/* meet the facilitator CSS */
+section#facilitator {
+    display: flex;
+    background: #000;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    padding: 1em;
+}
+
+section#facilitator .about-facilitator {
+    margin: auto;
+}
+
+section#facilitator .about-facilitator a button {
+    border: none;
+    background: #323393;
+    padding: 10px;
+    color: white;
+    margin-top: 7px;
+    cursor: pointer;
+    transition: all 3s;
+}
+
+section#facilitator .about-facilitator a button:hover {
+    background: rgb(255, 0, 221);
+    padding: 10px;
+    color: white;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+section#facilitator .image {
+    height: 300px;
+    margin: auto;
+
+}
+
+section#facilitator .image img {
+    height: 100%;
+}
+
+section#facilitator .about-facilitator {
+    flex-basis: 70%;
+}
+
+
+/* testimonial CSS */
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+#testimonial {
+    margin-top: 3em;
+    text-align: center;
+}
+
+
+#testimonial .testimonies {
+    white-space: nowrap;
+    overflow: auto;
+    scrollbar-width: none;
+    width: 100%;
+    height: 400px;
+}
+
+#testimonial .testimonies .review {
+    display: inline-block;
+    margin: 1em;
+    height: 90%;
+    width: 30%;
+    text-align: center;
+}
+
+#testimonial .testimonies .review .r-img {
+    height: 300px;
+}
+
+#testimonial .testimonies .review .r-img img {
+    height: 100%;
+}
+
+
+
+/* course CSS */
+
+section#course {
+    display: flex;
+    margin-top: 4em;
+}
+
+#course a:first-child {
+    flex-basis: 50%;
+    margin: auto;
+}
+
+#course>a:last-child {
+    margin: auto;
+}
+
+#course a:first-child button {
+    cursor: pointer;
+    background: #323393;
+    color: white;
+    height: 4em;
+    width: 15em;
+    border-radius: 1em;
+    border: none;
+}
+
+#course a:last-child button {
+    cursor: pointer;
+    background: #323393;
+    color: white;
+    height: 4em;
+    width: 15em;
+    border-radius: 1em;
+    border: none;
+    margin-bottom: 19px;
+}
+
+#course a button:hover {
+    background: #7777f5;
+}
+
+/* question CSS */
+#ask {
+    text-align: center;
+    margin-top: 4em;
+    margin-bottom: 5em;
+}
+
+#ask h4 {
+    font-size: 19pt;
+}
+
+#ask span {
+    font-size: 15pt;
+}
+
+#ask form {
+    width: 50%;
+    margin: auto;
+}
+
+#ask form input {
+    width: 100%;
+    padding: 10px;
+    background: white;
+    border: solid black 1px;
+    margin-top: 3em;
+}
+
+#ask form textarea {
+    resize: none;
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    background: white;
+    border: solid black 1px;
+    margin-top: 3em;
+}
+
+#ask form button {
+    margin-top: 10px;
+    background: #323393;
+    border: none;
+    padding: 5px;
+    width: 30%;
+    cursor: pointer;
+    color: white;
+    font-size: 13pt;
+}
+
+#ask form button:hover {
+    background: #8284f3;
+}
+
+
+/* footer */
+
+footer {
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    border-top: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+footer div {}
+
+footer div .f-logo {
+    height: 50px;
+}
+
+footer div .f-logo img {
+    height: 100%;
+}
+
+footer .text {
+    margin-top: 1em;
+}
+
+footer .text span {
+    font-size: 10pt;
+}
+
+@media screen and (max-width:750px) {
+    #about .boxes {
+        margin-bottom: 5em;
+    }
+
+    .nav .menu {
+        display: block;
+        position: fixed;
+        left: -100%;
+        top: 0;
+        background: #fff;
+        height: 100vh;
+        max-width: 400px;
+        width: 100%;
+        padding-top: 60px;
+        flex-direction: column;
+        align-items: center;
+        transition: all 1s ease;
+        z-index: 10;
+    }
+
+    .nav.active .menu {
+        left: 0;
+    }
+
+    nav.nav .menu li {
+        margin: 1em;
+    }
+
+    nav.nav .menu li.menubtn a,
+    nav.nav .menu li.menubn a {
+        margin-top: 1em;
+    }
+
+    nav .menu-btn,
+    .nav .menu .cancel-btn {
+        display: block;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+    section#showcase {
+        display: block;
+        padding: 1em;
+        text-align: center;
+    }
+
+    section#showcase {
+        font-size: 10pt;
+    }
+
+    section#showcase .vid {
+        margin: auto;
+        width: 300px;
+        padding: 10px;
+    }
+
+    section#facilitator .about-facilitator {
+        margin: auto;
+        padding: 10px;
+    }
+
+    #testimonial .testimonies .review {
+        display: inline-block;
+        margin: 1em;
+        height: 90%;
+        width: 50%;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+
+    section#facilitator .image {
+        height: 150px;
+        margin: auto;
+    }
+
+
+    #about .boxes {
+        display: block;
+        padding: 3em;
+        justify-content: center;
+    }
+
+    #about .boxes .box {
+        width: 50%;
+        margin: auto;
+        height: 190px;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    section#facilitator {
+        display: block;
+        flex: none;
+    }
+
+    section#facilitator .image {
+        height: 300px;
+        text-align: center;
+
+    }
+}
+
+@media screen and (max-width:405px) {
+
+    #testimonial .testimonies .review {
+        display: inline-block;
+        margin: 1em;
+        height: 90%;
+        width: 70%;
+        text-align: center;
+    }
+
+    footer div .f-logo {
+        height: 30px;
+    }
+
+    section#course {
+        display: block;
+        flex: none;
+        margin-top: 3em;
+        text-align: center;
+    }
+
+    #course>a:first-child button {
+        background: #323393;
+        color: white;
+        height: 4em;
+        width: 15em;
+        border-radius: 1em;
+        border: none;
+    }
+
+    #course>a:last-child button {
+        background: #323393;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:365px) {
+
+    #ask form button {
+        background: #323393;
+        border: none;
+        padding: 1px;
+        width: 100%;
+        cursor: pointer;
+        color: white;
+        font-size: 13pt;
+    }
+
+    #about .boxes .box {
+        width: 70%;
+        margin: auto;
+        height: 190px;
+    }
+}
