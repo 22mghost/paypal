@@ -487,6 +487,10 @@ footer .text span {
     }
     
 
+}
+
+@media screen and (max-width:600px) {
+
     #ask form button {
         width: 100% !importants;
     }
