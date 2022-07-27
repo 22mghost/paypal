@@ -488,7 +488,7 @@ footer .text span {
     
 
     #ask form button {
-        width: 100%;
+        width: 100% !importants;
     }
 }
 
