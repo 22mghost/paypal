@@ -485,6 +485,11 @@ footer .text span {
         text-align: center;
 
     }
+    
+
+    #ask form button {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:405px) {
@@ -524,16 +529,6 @@ footer .text span {
 }
 
 @media screen and (max-width:365px) {
-
-    #ask form button {
-        background: #323393;
-        border: none;
-        padding: 1px;
-        width: 100%;
-        cursor: pointer;
-        color: white;
-        font-size: 13pt;
-    }
 
     #about .boxes .box {
         width: 70%;
