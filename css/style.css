@@ -452,6 +452,13 @@ footer .text span {
 
 }
 
+@media screen and (max-width:600px) {
+
+    #ask form button {
+        width: 100% !important;
+    }
+}
+
 @media screen and (max-width:500px) {
 
     section#facilitator .image {
@@ -487,13 +494,6 @@ footer .text span {
     }
     
 
-}
-
-@media screen and (max-width:600px) {
-
-    #ask form button {
-        width: 100% !importants;
-    }
 }
 
 @media screen and (max-width:405px) {
